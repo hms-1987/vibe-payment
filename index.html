@@ -20,56 +20,59 @@
     </header>
 
     <main class="layout">
-      <section class="kanban">
-        <h2>Fases do Kanban</h2>
-        <div class="kanban-board">
-          <article class="kanban-column">
-            <header>
+      <section class="KanbanBoard">
+        <header class="section-header">
+          <h2>Fases do Kanban</h2>
+          <p>Leitura rápida do volume de solicitações por fase.</p>
+        </header>
+        <div class="kanban-grid">
+          <article class="KanbanColumn">
+            <header class="column-header">
               <h3>Novas solicitações</h3>
               <span class="count">4</span>
             </header>
-            <div class="card">
+            <div class="Card">
               <h4>Compra de materiais</h4>
               <p>Solicitante: Camila Souza</p>
               <p class="meta">Urgência: alta</p>
             </div>
-            <div class="card">
+            <div class="Card">
               <h4>Pagamento de fornecedor</h4>
               <p>Solicitante: João Lima</p>
               <p class="meta">Anexo pendente</p>
             </div>
           </article>
 
-          <article class="kanban-column">
-            <header>
+          <article class="KanbanColumn">
+            <header class="column-header">
               <h3>Processando</h3>
               <span class="count">2</span>
             </header>
-            <div class="card">
+            <div class="Card">
               <h4>Serviço de manutenção</h4>
               <p>Comprador: Ana Reis</p>
               <p class="meta">Checklist financeiro iniciado</p>
             </div>
           </article>
 
-          <article class="kanban-column">
-            <header>
+          <article class="KanbanColumn">
+            <header class="column-header">
               <h3>Recorrentes</h3>
               <span class="count">3</span>
             </header>
-            <div class="card">
+            <div class="Card">
               <h4>Pagamento mensal SaaS</h4>
               <p>Centro de custo: Produto</p>
               <p class="meta">Próxima cobrança: 05/04</p>
             </div>
           </article>
 
-          <article class="kanban-column">
-            <header>
+          <article class="KanbanColumn">
+            <header class="column-header">
               <h3>Arquivados</h3>
               <span class="count">6</span>
             </header>
-            <div class="card">
+            <div class="Card">
               <h4>Compra de notebooks</h4>
               <p>Processado no ERP</p>
               <p class="meta">ID ERP: 34892</p>
@@ -78,9 +81,12 @@
         </div>
       </section>
 
-      <section class="details">
+      <section class="DetailsPanel">
         <div class="details-header">
-          <h2>Detalhes da solicitação</h2>
+          <div>
+            <h2>Detalhes da solicitação</h2>
+            <p class="meta">Última atualização: hoje às 10:05</p>
+          </div>
           <span class="status-pill">Processando</span>
         </div>
 
