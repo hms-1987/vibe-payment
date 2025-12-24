@@ -1,0 +1,233 @@
+:root {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: #1f1f1f;
+  background-color: #f5f4f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+  color: #1f1f1f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  border: 2px solid #1f1f1f;
+  background: #fff;
+}
+
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 520px;
+  color: #3f3f3f;
+}
+
+.status-chip {
+  padding: 10px 16px;
+  border: 2px solid #1f1f1f;
+  background: #f0f0f0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.KanbanBoard,
+.DetailsPanel {
+  border: 2px solid #1f1f1f;
+  background: #fff;
+  padding: 20px;
+}
+
+.section-header {
+  display: grid;
+  gap: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.section-header p {
+  font-size: 13px;
+  color: #4c4c4c;
+}
+
+.kanban-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.KanbanColumn {
+  border: 2px dashed #1f1f1f;
+  padding: 12px;
+  background: #fafafa;
+  min-height: 220px;
+  display: grid;
+  gap: 12px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.column-header h3 {
+  font-size: 16px;
+}
+
+.count {
+  background: #e6e6e6;
+  padding: 4px 10px;
+  border: 1px solid #1f1f1f;
+  font-size: 12px;
+}
+
+.Card {
+  border: 2px solid #1f1f1f;
+  background: #fff;
+  padding: 12px;
+}
+
+.Card h4 {
+  font-size: 15px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #4c4c4c;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #1f1f1f;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.status-pill {
+  padding: 6px 14px;
+  border: 2px solid #1f1f1f;
+  background: #f4f1dc;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.detail-block {
+  border: 2px solid #1f1f1f;
+  padding: 12px;
+  margin-bottom: 16px;
+  background: #fafafa;
+}
+
+.detail-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.checklist li::before {
+  content: "□";
+  position: absolute;
+  left: 0;
+}
+
+.checklist .done::before {
+  content: "■";
+}
+
+.comment {
+  border: 1px solid #1f1f1f;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border: 2px dashed #1f1f1f;
+  font-family: inherit;
+}
+
+.attachments {
+  display: grid;
+  gap: 8px;
+}
+
+.attachment {
+  border: 2px solid #1f1f1f;
+  padding: 10px;
+  background: #fff;
+}
+
+button {
+  padding: 10px 16px;
+  border: 2px solid #1f1f1f;
+  background: #e6e6e6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.erp {
+  display: grid;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 20px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
