@@ -63,7 +63,9 @@ p {
 }
 
 .KanbanBoard,
-.DetailsPanel {
+.DetailsPanel,
+.kanban,
+.details {
   border: 2px solid #1f1f1f;
   background: #fff;
   padding: 20px;
@@ -81,14 +83,16 @@ p {
   color: #4c4c4c;
 }
 
-.kanban-grid {
+.kanban-grid,
+.kanban-board {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
   margin-top: 16px;
 }
 
-.KanbanColumn {
+.KanbanColumn,
+.kanban-column {
   border: 2px dashed #1f1f1f;
   padding: 12px;
   background: #fafafa;
@@ -97,7 +101,8 @@ p {
   gap: 12px;
 }
 
-.column-header {
+.column-header,
+.kanban-column > header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -115,13 +120,15 @@ p {
   font-size: 12px;
 }
 
-.Card {
+.Card,
+.card {
   border: 2px solid #1f1f1f;
   background: #fff;
   padding: 12px;
 }
 
-.Card h4 {
+.Card h4,
+.card h4 {
   font-size: 15px;
 }
 
