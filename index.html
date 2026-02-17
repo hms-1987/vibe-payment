@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compras e Pagamentos — Protótipo Low Fidelity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Compras e Pagamentos</p>
+        <h1>Protótipo Low Fidelity</h1>
+        <p class="subtitle">
+          Fluxo de solicitações vindas de formulário público, com acompanhamento e
+          consolidação antes do processamento no ERP.
+        </p>
+      </div>
+      <div class="status-chip">Origem: Formulário público</div>
+    </header>
+
+    <main class="layout">
+      <section class="KanbanBoard">
+        <header class="section-header">
+          <h2>Fases do Kanban</h2>
+          <p>Leitura rápida do volume de solicitações por fase.</p>
+        </header>
+        <div class="kanban-grid">
+          <article class="KanbanColumn">
+            <header class="column-header">
+              <h3>Novas solicitações</h3>
+              <span class="count">4</span>
+            </header>
+            <div class="Card">
+              <h4>Compra de materiais</h4>
+              <p>Solicitante: Camila Souza</p>
+              <p class="meta">Urgência: alta</p>
+            </div>
+            <div class="Card">
+              <h4>Pagamento de fornecedor</h4>
+              <p>Solicitante: João Lima</p>
+              <p class="meta">Anexo pendente</p>
+            </div>
+          </article>
+
+          <article class="KanbanColumn">
+            <header class="column-header">
+              <h3>Processando</h3>
+              <span class="count">2</span>
+            </header>
+            <div class="Card">
+              <h4>Serviço de manutenção</h4>
+              <p>Comprador: Ana Reis</p>
+              <p class="meta">Checklist financeiro iniciado</p>
+            </div>
+          </article>
+
+          <article class="KanbanColumn">
+            <header class="column-header">
+              <h3>Recorrentes</h3>
+              <span class="count">3</span>
+            </header>
+            <div class="Card">
+              <h4>Pagamento mensal SaaS</h4>
+              <p>Centro de custo: Produto</p>
+              <p class="meta">Próxima cobrança: 05/04</p>
+            </div>
+          </article>
+
+          <article class="KanbanColumn">
+            <header class="column-header">
+              <h3>Arquivados</h3>
+              <span class="count">6</span>
+            </header>
+            <div class="Card">
+              <h4>Compra de notebooks</h4>
+              <p>Processado no ERP</p>
+              <p class="meta">ID ERP: 34892</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="DetailsPanel">
+        <div class="details-header">
+          <div>
+            <h2>Detalhes da solicitação</h2>
+            <p class="meta">Última atualização: hoje às 10:05</p>
+          </div>
+          <span class="status-pill">Processando</span>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-block">
+            <h3>Resumo</h3>
+            <ul>
+              <li><strong>Título:</strong> Serviço de manutenção elétrica</li>
+              <li><strong>Solicitante:</strong> Paulo Nunes</li>
+              <li><strong>Centro de custo:</strong> Facilities</li>
+              <li><strong>Valor estimado:</strong> R$ 12.500</li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <h3>Checklist ERP</h3>
+            <ul class="checklist">
+              <li class="done">Dados validados</li>
+              <li class="done">Aprovação do gestor</li>
+              <li>Pendente: lançamento no ERP</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h3>Comentários</h3>
+          <div class="comment">
+            <p><strong>Ana Reis</strong> · 09:32</p>
+            <p>Fornecedor confirmou prazo de entrega em 7 dias úteis.</p>
+          </div>
+          <div class="comment">
+            <p><strong>Equipe Financeira</strong> · 10:05</p>
+            <p>Precisamos do comprovante de orçamento para anexar no ERP.</p>
+          </div>
+          <textarea placeholder="Adicionar comentário"></textarea>
+        </div>
+
+        <div class="detail-block">
+          <h3>Evidências</h3>
+          <div class="attachments">
+            <div class="attachment">orcamento_manutencao.pdf</div>
+            <div class="attachment">fotos_local.zip</div>
+            <button type="button">Anexar arquivo</button>
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h3>Processamento ERP</h3>
+          <div class="erp">
+            <label>
+              <input type="checkbox" checked />
+              Solicitação processada no ERP
+            </label>
+            <p class="meta">ID ERP: 58201 · Processado em 12/03</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
